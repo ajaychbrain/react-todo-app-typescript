@@ -28,6 +28,7 @@ const AddEmployee = (props: Props)=>{
     
     console.log(data)
     OnaddMyEmployee(data);
+    onBackClick()
    }
 
    const onFirstNameChange = (e:any) =>{
@@ -63,7 +64,7 @@ const AddEmployee = (props: Props)=>{
             <div>
                 
                 <input type="button"  value="Back" onClick={onBackClick}/>
-                <input type="button" onClick={OnaddBtnEmployee} value="Submit" />
+                <input type="button" onClick={OnaddBtnEmployee} value="Add Employee" />
             </div>
         </form>
         
