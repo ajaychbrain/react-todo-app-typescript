@@ -18,7 +18,7 @@ const AddEmployee = (props: Props)=>{
   
 
    const OnaddBtnEmployee= (e:any)=>{
-    e.preventDefault()
+    e.preventDefault();
     const data :IEmployee = {
         id: new Date().toJSON.toString(),
         firstName: firstName,
@@ -62,7 +62,6 @@ const AddEmployee = (props: Props)=>{
                 <input type="text" value={email} onChange={onEmailChange}/>
             </div>
             <div>
-                
                 <input type="button"  value="Back" onClick={onBackClick}/>
                 <input type="button" onClick={OnaddBtnEmployee} value="Add Employee" />
             </div>
